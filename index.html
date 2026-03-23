@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Thailand</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Glide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <!-- GLightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero__overlay">
+            <h1>Visit Thailand</h1>
+            <p>Discover amazing places</p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Slider -->
+        <section class="section" data-aos="fade-up">
+            <h2>Top Destinations</h2>
+
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="assets/images/bangkok.jpg" alt="Bangkok">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="assets/images/phuket.jpg" alt="Phuket">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="assets/images/chiang-mai.jpg" alt="Chiang Mai">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow" data-glide-dir="<">Prev</button>
+                    <button class="glide__arrow" data-glide-dir=">">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section" data-aos="fade-up">
+            <h2>Gallery</h2>
+
+            <div class="gallery">
+                <a href="assets/images/gallery-1.jpg" class="glightbox" data-gallery="trip">
+                    <img src="assets/images/gallery-1.jpg" alt="">
+                </a>
+
+                <a href="assets/images/gallery-2.jpg" class="glightbox" data-gallery="trip">
+                    <img src="assets/images/gallery-2.jpg" alt="">
+                </a>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <section class="section" data-aos="fade-up">
+            <h2>Map</h2>
+            <div id="map"></div>
+        </section>
+
+    </main>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <p>Libraries used: AOS, Glide.js, GLightbox, Leaflet</p>
+        <p>© 2026 Visit Thailand by SANPIT GUBTAPOL</p>
+    </footer>
+
+    <!-- JS libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
